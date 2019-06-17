@@ -11,21 +11,23 @@ addons:
     sources:
       - sourceline: 'ppa:ondrej/php'
     packages:
-      - libmcrypt-dev
-      - libtidy-dev
       - libicu-dev
+      - libmcrypt-dev
+      - libonig-dev
+      - libtidy-dev
       - libzip-dev
       - php5-cli
       - re2c
     update: true
   homebrew:
     packages:
-      - re2c
-      - libmcrypt
-      - openssl
-      - libxml2
       - icu4c
+      - libmcrypt
+      - libxml2
       - libzip
+      - oniguruma
+      - openssl
+      - re2c
     update: true
 
 matrix:
