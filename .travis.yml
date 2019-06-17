@@ -66,6 +66,10 @@ matrix:
       env:
         - PHP_BUILD_EXTRA_MAKE_ARGUMENTS="-j2"
         - DEFINITION=7.3.6
+    - os: linux
+      env:
+        - PHP_BUILD_EXTRA_MAKE_ARGUMENTS="-j2"
+        - DEFINITION=7.4.0alpha1
     - os: osx
       osx_image: xcode8
       env:
@@ -111,6 +115,11 @@ matrix:
       env:
         - PHP_BUILD_EXTRA_MAKE_ARGUMENTS="-j2"
         - DEFINITION=7.3.6
+    - os: osx
+      osx_image: xcode9.4
+      env:
+        - PHP_BUILD_EXTRA_MAKE_ARGUMENTS="-j2"
+        - DEFINITION=7.4.0alpha1
 
 before_install:
   - |
